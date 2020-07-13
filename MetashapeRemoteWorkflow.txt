@@ -1,4 +1,4 @@
-### Workflow for Running Metashape on a Remote Server
+### Workflow for Running Metashape on a Remote Server. This utilizes scripts included at https://github.com/wyattmillion/Coral3DPhotogram
 #
 ##### 1. You must download the preferred Metashape (professional, standard) from the Agisoft website onto the remote server you are using.
 # 		a. Download from https://www.agisoft.com/downloads/installer/ to local computer then copy to remote server
