@@ -1,0 +1,29 @@
+# 1. You must download the preferred Metashape (professional, standard) from the Agisoft website onto the remote server you are using.
+# 		a. Download from https://www.agisoft.com/downloads/installer/ to local computer then copy to remote server
+
+scp $local/directory/metashape-pro_1_5_3_amd64.tar.gz username@to_host:/remote/bin
+
+# 		b. download software directly from https://www.agisoft.com/downloads/installer/ to remote server 
+
+wget http://download.agisoft.com/metashape-pro_1_5_3.dmg #version 1.5.3 for Mac OS
+
+# 2. Decompress metashape-pro to create the metashape-pro directory
+
+tar xvzf metashape-pro_1_5_3_amd64.tar.gz
+
+# 3. Create the offline activation request to make Metashape executable from the commandline, this will require the activation code 
+#   received when purchase/free trial activation
+
+cd metashape-pro_1_5_3
+./metashape.sh  --activate-offline 11111-22222-33333-44444-55555 /var/tmp/request.act
+
+#  This will create the file request.act in var/temp/. You must send this file to support@agisoft.com and wait for their response with a license file (.lic)
+
+scp $var/temp/request.act local/directory #then send to support@agisoft.com
+
+# Copy this file to the metashape-pro_1_5_3 directory
+
+scp local/directory/license_file_name.lic username@to_host:remote/bin/metashape-pro_1_5_3
+
+# Run metashape.sh to activate the licensed version of Metashape
+bash metashape.sh
