@@ -28,5 +28,4 @@ chunk.buildTexture(blending=Metashape.MosaicBlending, size=25000, fill_holes=Tru
 
 #names model based on cwd, again, this can be changed to whatever you like, here is where you also define the export file type
 chunk.exportModel(cwd[-1]+'_'+'DM_'+"model.obj", binary=True, precision=6, texture_format=Metashape.ImageFormatJPEG, texture=True, normals=True, colors=True, cameras=True, markers=True, udim=False, strip_extensions=False, format=Metashape.ModelFormatOBJ) 
-#chunk.exportReport("/home/kenkel/Acerv3Dproj/rawPhotos"/cwd[-2]"/"cwd[-1], cwd[-1]+"report.txt")
 doc.save()
