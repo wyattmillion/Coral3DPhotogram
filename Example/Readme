@@ -1,1 +1,4 @@
-Here you can find photos for to build a coral models as an example for the protocol. 
+These are the materials needed to test out the protocol. 
+1) There are 124 .JPG photos that are were used to build the model: M32.13_T12. 
+2) M32.13_T12.py is the script used to build the model in Metashape on the command line
+3) M32.13_T12_DM_model.obj is the 3D model file that was created from the photos included here. 
