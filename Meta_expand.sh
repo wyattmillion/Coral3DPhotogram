@@ -30,5 +30,5 @@ for line in $filelines; do
     name1="${NAME[6]}";
     while read script; do
         echo ${script//DIR/$line};
-    done < metashapeBase.py > ${name1}.py
+    done < metashapeBase.py > ${name1}.py. #change to the name of the base script that you would like to use as a template
 done
