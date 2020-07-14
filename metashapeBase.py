@@ -22,6 +22,5 @@ chunk.buildModel(surface=Metashape.Arbitrary, source=Metashape.DenseCloudData, i
 chunk.buildUV(mapping=Metashape.GenericMapping) #part of build texture step
 chunk.buildTexture(blending=Metashape.MosaicBlending, size=25000, fill_holes=True)#rest of build texture step
 chunk.exportModel(cwd[-2]+cwd[-1]+'_'+"model.obj", binary=True, precision=6, texture_format=Metashape.ImageFormatJPEG, texture=True, normals=True, colors=True, cameras=True, markers=True, udim=False, strip_extensions=False, format=Metashape.ModelFormatOBJ) 
-exportReport(/home/kenkel/Acerv3Dproj/rawPhotos/+cwd[-2]+"/"+cwd[-1])
 doc.save()
 
